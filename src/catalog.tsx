@@ -10,6 +10,7 @@ type element = {
     des:String
   };
 type CatalogProps = {
+
   images: element[];
 };
 
@@ -46,7 +47,7 @@ const Catalog: React.FC<CatalogProps> = ({ images }) => {
 
   return (
     <Box width={"80%"} marginTop={"20px"} marginX={"auto"}>
-<Box display={"flex"} flexDirection={{xs:"column",md:"row"}} width={"100%"}   gap={"30px"} >
+<Box display={"flex"} flexDirection={{xs:"column",md:"row"}} width={"100%"} height={{xs:"100%",md:"520px"}}   gap={"30px"} >
     <Box flex={"5"} >
      
       <img src={images[activeIndex].img} alt="Catalog Slide" width={"100%"}  style={{
